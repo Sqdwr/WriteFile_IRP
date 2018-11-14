@@ -112,7 +112,7 @@ NTSTATUS WriteFile(WCHAR *w_FileName, PVOID Buffer,ULONG BufferLength,ULONG File
 		0,
 		0,
 		NULL,
-		0x300
+		IO_CHECK_CREATE_PARAMETERS | IO_NO_PARAMETER_CHECKING
 		);
 
 	if (!NT_SUCCESS(Status))
